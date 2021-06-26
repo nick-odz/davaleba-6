@@ -1,9 +1,55 @@
+
+
 .stage{
-	background-image: url(../image/stage4.jpg);
+	background-image: url('../image/stage2.jpg');
 	height: 1000px;
-	}
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:left;
+	position: relative;
+
+}
+.guitar{
+	width: 800px;
+	position: absolute;
+
+	animation: guitar 8s linear infinite alternate;
+	z-index: 3;
+}
+@keyframes guitar{
+	0% {left: 100px; top:500px;}
+	25% {left:150px; top: 500px}
+	50% {left: 300px; top:500px;}
+	75% {left: 500px; top:500px;}
+	100% { left:550px; top: 500px;}
+}
+.drummer{
+	width: 700px;
+	margin-left: 600px;
+	margin-top: 500px;
+}
+.vocal{
+	width: 550px;
+	position: absolute;
+	animation: vocal 4s linear infinite alternate;
+}
+@keyframes vocal{
+	0% {right: 100px; top:500px;}
+	25% {right:100px; top: 450px}
+	50% {right: 100px; top:400px;}
+	75% {right: 100px; top:350px;}
+	100% { right:100px; top: 300px;}
+}
 
 .note{
-	width: 50px;
-	height: 50px;
+	width: 900px;
+	position: absolute;
+	animation: note 15s linear infinite alternate;
 }
+@keyframes note{
+	0% {left: 100px; top:50px;}
+	25% {left:150px; top: 90px}
+	50% {left: 300px; top:100px;}
+	75% {left: 500px; top:150px;}
+	100% { left:550px; top: 200px;}
